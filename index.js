@@ -7,7 +7,7 @@ var debug = require("debug")("follow-redirects");
 
 // RFC7231§4.2.1: Of the request methods defined by this specification,
 // the GET, HEAD, OPTIONS, and TRACE methods are defined to be safe.
-var SAFE_METHODS = { GET: true, HEAD: true, OPTIONS: true, TRACE: true };
+var SAFE_METHODS = { get: true, head: true, options: true, trace: true };
 
 // Create handlers that pass events from native requests
 var eventHandlers = Object.create(null);
